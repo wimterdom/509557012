@@ -11,11 +11,11 @@ import static org.junit.jupiter.params.provider.Arguments.arguments;
 public class PriorityQueueTest {
     static Stream<Arguments> param_input() {
         return Stream.of(
-                arguments(new int[]{1,4,3,2}, new int[]{11,2,35,4}),
-                arguments(new int[]{3,7,4,2}, new int[]{2,23,4,57}),
-                arguments(new int[]{5,8,6,7}, new int[]{54,6,47,8}),
-                arguments(new int[]{7,6,9,8}, new int[]{666,777,888,999}),
-                arguments(new int[]{9,4,6,8}, new int[]{47,69,48,29})
+                arguments(new int[]{1,4,3,2}, new int[]{1,2,3,4}),
+                arguments(new int[]{3,7,4,2}, new int[]{2,3,4,7}),
+                arguments(new int[]{5,8,6,7}, new int[]{5,6,7,8}),
+                arguments(new int[]{7,6,9,8}, new int[]{6,7,8,9}),
+                arguments(new int[]{9,4,6,8}, new int[]{4,6,8,9})
         );
     }
 
